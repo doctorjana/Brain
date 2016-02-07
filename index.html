@@ -17,7 +17,7 @@
 	</head>
 
 	<body>
-
+    <a href="https://patreon.com/docjana"><img style="position: absolute; top: 15px; right: 10px; border: 0; z-index:1" src="images/icon/patreon.png" alt="Support me on Patreon" ></a>
 		<div class="reveal">
 
 			<!-- Any section element inside of this container is displayed as a slide -->
@@ -187,7 +187,7 @@
                                        
 					<section>
 						<h2>Working on more stuff!</h2>
-						<p>That's it for now, time to go back up.</p>
+						<p>More awesome content is coming soon!</p>
 						<br>
 						<a href="#/2">
 							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
@@ -199,8 +199,9 @@
 
 				
 
-				<section data-background="#4caf50">
-					<h1>MORE AWESOME CONTENT COMING SOON!</h1>
+				<section data-state="finalstate" data-background="#4caf50">
+					<h1 id="r">Redirect to patreon in 4...</h1>
+                    
 					<p>
                     Want a dialogue with me? <a href="mailto:doctorjana57@gmail.com?Subject=You%20are%20awesome!" target="_top">Mail me!</a>
 					</p>
@@ -231,6 +232,32 @@
 			});
 
 		</script>
+<script>
+		Reveal.addEventListener( 'finalstate', function() {
+			
+			var text = ['Redirect to patreon in 3...', 'Redirect to patreon in 2...', 'Redirect to patreon in 1...', 'Redirect to patreon in 0...'];
+				i = 0,
+				div = document.getElementById('r');
+			
+			setInterval(function ()
+			{
+				div.textContent=text[i++ % text.length];
+			}, 1000);
+						
+
+				window.setTimeout(function(){
+				
+				
+				if(Reveal.isLastSlide()){
+					// Move to a new location or you can do something else
+					window.location.href = "https://www.patreon.com/docjana";
+				}
+				}, 3000);
+			
+
+
+		}, false );
+        </script>        
 <script type="text/javascript">
 var sc_project=10813515; 
 var sc_invisible=1; 
