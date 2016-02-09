@@ -1,32 +1,21 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+<head>
+  <title>Neuro Muscular Junction</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/cyborg/bootstrap.min.css">
+  
+</head>
+<body>
 
-	<head>
-		<meta charset="utf-8">
-
-		<title>Neuro Muscular Junction</title>
-		<meta name="description" content="Open Source Medical Images and Animations for Free!">
-		<meta name="author" content="Dr. Jana">
-		<meta property="og:image" content="http://docjana.com/images/doctor.jpg" />
-		<meta property="og:title" content="Open Source Medical Stuff!" />
-		<meta property="og:description" content="Open Source Medical Images and Animations for Free" />
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-		<link rel="image_src" href="http://docjana.com/images/doctor.jpg" />
-	</head>
-
-	<body>
-    <a href="index.html"><img style="position: absolute; top: 15px; right: 10px; border: 0; z-index:1" src="icons/home.png" alt="HOME" ></a>
-    	<div class="reveal" style="background-color:#000">
-            <div class="slides">
-
-
-				<section data-background="images/Medium/NMJ-Medium-bg.jpg" id="nmj" style="color:#000">
+<div class="container">
+				<section id="nmj" style="color:#000">
 						<h2>Neuro Muscular Junction</h2>
 						<p>A neuromuscular junction is a chemical synapse formed by the contact between a motor neuron and a muscle fiber. </p>
-					<table>
+                     <img class="img img-thumbnail img-responsive" src="images/Medium/NMJ-Medium-bg.jpg">
+                    <h3>Download Links:</h3>
+					<table class="table">
 						<thead>
 							<tr>
 								<th>Quality</th>
@@ -66,29 +55,24 @@
                     <div style="float:left"><a href="https://creativecommons.org/licenses/by/4.0/"><img src="images/icon/Cc-by-icon.png"></a></div>
                      <div style="float:right; font-size:18px"><a href="index.html#/nmj">[VIEW ON HOMEPAGE]</a></div>
 					</section>
-            </div>
-		</div>            
-		<link rel="stylesheet" href="css/minreveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+                                    <div id="disqus_thread"></div>
+					<script>
+                    
+                        var disqus_config = function () {
+                            this.page.url = 'http://docjana.com/nmj.html';  // Replace PAGE_URL with your page's canonical URL variable
+                            this.page.identifier = 'NeuroMuscularJunction'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                        };
+                    
+                        (function() {  // DON'T EDIT BELOW THIS LINE
+                            var d = document, s = d.createElement('script');
+                            
+                            s.src = '//docjana.disqus.com/embed.js';
+                            
+                            s.setAttribute('data-timestamp', +new Date());
+                            (d.head || d.body).appendChild(s);
+                        })();
+                    </script>
+</div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/minreveal.js"></script>
-
-		<script>
-
-			// Full list of configuration options available at:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: false,
-				progress: false,
-				history: false,
-				center: true,
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
-				
-			});
-
-		</script>
-
-	</body>
+</body>
 </html>
-    
